@@ -1,5 +1,5 @@
 body {
-    background-color: pink;
+    background-color: #121212;
 
     font-family: sans-serif;
 
@@ -8,21 +8,68 @@ body {
     align-items: center;
 
     height: 90vh;
+
+    color: white;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 40px;
     justify-content: center;
     align-items: center;
 }
 
-.container > span {
-    font-size: 23px;
+.container > h1 {
+    font-size: 50px;
 }
 
+.container > span {
+    font-size: 100px;
+}
+
+
+
 .btn {
-    width: 100px;
-    height: 25px;
+    width: 150px;
+    height: 35px;
+
+    background: transparent;
+
+    color: white;
+    font-size: 20px;
+
+    outline: none;
+
+    border: 1px solid #12dbcb;
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: ease-in .2s;
+
+    margin-left: 15px;
+}
+
+.btn:hover {
+    background-color: #12dbcb;
+
+    color: black;
+    
+}
+
+@media only screen and (max-width: 500px){
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        
+    }
+
+    .btn {
+        margin-left: 0;
+    }
 }
