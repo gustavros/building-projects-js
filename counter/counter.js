@@ -8,35 +8,35 @@ const btns = document.querySelectorAll(".btn");
 const value = document.querySelector("#value")
 
 btns.forEach(function (btn) {
- btn.addEventListener('click', function(e){
-  const styles = e.currentTarget.classList
-  if (styles.contains('decrease')) {
-   count--;
-  }
+    btn.addEventListener('click', function(e){
+    const styles = e.currentTarget.classList
+    if (styles.contains('decrease')) {
+        count--;
+    }
 
-  else if (styles.contains('increase')) {
-   count++;
-  }
+    else if (styles.contains('increase')) {
+        count++;
+    }
 
-  else {
-   count = 0;
-  }
+    else {
+        count = 0;
+    }
 
-  if (count > 0 ) {
-   value.style.color = 'lightgreen'
-  }
+    if (count > 0 ) {
+        value.style.color = 'lightgreen'
+    }
 
-  else if (count < 0){
-   value.style.color = 'red'
-  }
+    else if (count < 0){
+        value.style.color = 'red'
+    }
 
-  else {
-   value.style.color = 'white'
-  }
-  
+    else {
+        value.style.color = 'white'
+    }
 
-  value.textContent = count;
- })
+
+    value.textContent = count;
+    })
 
 })
 
