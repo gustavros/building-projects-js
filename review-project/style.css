@@ -1,117 +1,120 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: rgb(0,0,0);
-    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(232,232,232,1) 100%);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(232, 232, 232, 1) 100%
+  );
 
-    color: #dee4e6;
-    font-family: sans-serif;
+  color: #dee4e6;
+  font-family: sans-serif;
 
-    text-align: center;
+  text-align: center;
 
-    height: 100vh;
-
+  height: 100vh;
 }
 
 .title > h1 {
-    padding: 10px;
+  padding: 10px;
 
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 
-    font-size: 30px;
-    color: #303030;
+  font-size: 30px;
+  color: #303030;
 }
 
 .container {
-    padding: 10px;
+  padding: 10px;
 }
 
 .review {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 
-    width: 550px;
-    height: 500px;
+  width: 550px;
+  height: auto;
 
-    background-color: #1614148e;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.479);
-    color: #ffffff;
+  background-color: #1614148e;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.479);
+  color: #ffffff;
 
-    margin: 0 auto;
-    padding: 10px;
-
+  margin: 0 auto;
+  padding: 10px;
 }
 
 #person-img {
-    width: 13vw;
-    height: 13vw;
+  width: 13vw;
+  height: 13vw;
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    box-shadow: 3px 3px 10px black;
+  box-shadow: 3px 3px 10px black;
 }
 
 #author {
-    font-size: 23px;
+  font-size: 23px;
 }
 
 #job {
-    font-size: 18px;
-    color: #e8e8e8;
+  font-size: 18px;
+  color: #e8e8e8;
 }
 
 #info {
-    font-size: 20px;
-    color: #a4a4a4;
-    
+  font-size: 20px;
+  color: #a4a4a4;
+
+  width: 80%;
+  height: auto;
 }
 
-.prev-btn, .next-btn {
-    width: 60px;
-    height: 30px;
+.prev-btn,
+.next-btn {
+  width: 60px;
+  height: 30px;
 
-    font-size: 20px;
+  font-size: 20px;
 
-    outline: none;
+  outline: none;
 
-    color: white;
+  color: white;
 
-    background-color: transparent;
-    border: 1px solid #a3a3a3;
-    border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid #a3a3a3;
+  border-radius: 10px;
 
-    cursor: pointer;
-
-    
+  cursor: pointer;
 }
 
 .random-btn {
-    width: 130px;
-    height: 40px;
+  width: 130px;
+  height: 40px;
 
-    background-color: transparent;
-    border: 1px solid #747474;
+  background-color: transparent;
+  border: 1px solid #747474;
 
-    color: white;
+  color: white;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .random-btn:hover,
 .prev-btn:hover,
 .next-btn:hover {
-    background-color: rgba(0, 255, 255, 0.644);
+  background-color: rgba(0, 255, 255, 0.644);
 
-    color: #000;
+  color: #000;
 
-    transition: cubic-bezier(0.26, 3, 0.07, 1) 0.8s;
+  transition: cubic-bezier(0.26, 3, 0.07, 1) 0.8s;
 }
